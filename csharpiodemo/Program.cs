@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharpiodemo
 {
+    //https://www.cnblogs.com/liyangLife/p/4797583.html
     class Program
     {
         static void Main(string[] args)
@@ -13,6 +14,7 @@ namespace csharpiodemo
             Console.WriteLine("c# io demo!");
             FileInfoDemo.Test();
             DirectoryDemo.Test();
+            PathDemo.Test();
             Console.WriteLine("complete!");
             Console.ReadLine();
         }
