@@ -10,7 +10,11 @@ namespace csharpiodemo
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("c# io demo!");
+            FileInfoDemo.Test();
+            DirectoryDemo.Test();
+            Console.WriteLine("complete!");
+            Console.ReadLine();
         }
     }
 }
