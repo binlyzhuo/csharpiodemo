@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DirectoryDemo.cs" />
+    <Compile Include="DriverInfoDemo.cs" />
     <Compile Include="FileInfoDemo.cs" />
+    <Compile Include="FileStreamDemo.cs" />
     <Compile Include="PathDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
