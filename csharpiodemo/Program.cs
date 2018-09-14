@@ -17,6 +17,7 @@ namespace csharpiodemo
             PathDemo.Test();
             DriverInfoDemo.Test();
             FileStreamDemo.Test();
+            FileStreamDemo.WriteTxt();
             Console.WriteLine("complete!");
             Console.ReadLine();
         }

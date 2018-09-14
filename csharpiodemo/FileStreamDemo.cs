@@ -29,5 +29,16 @@ namespace csharpiodemo
             Console.WriteLine("AllTxt:");
             Console.WriteLine(allTxt);
         }
+
+        public static void WriteTxt()
+        {
+            string path = @"F:\cs\2.txt";
+            File.WriteAllBytes(path,new byte[]{65,97});
+            string[] arr = new string[]{"65","97"};
+            File.WriteAllLines(path,arr,Encoding.UTF8);
+            File.WriteAllText(path,"HelloWorld~",Encoding.UTF8);
+        }
+
+
     }
 }
