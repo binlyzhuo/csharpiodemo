@@ -39,6 +39,9 @@ namespace csharpiodemo
             File.WriteAllText(path,"HelloWorld~",Encoding.UTF8);
         }
 
+        public static void StreamWrite()
+        {
 
+        }
     }
 }
