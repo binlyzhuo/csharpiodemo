@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DirectoryDemo.cs" />
     <Compile Include="DriverInfoDemo.cs" />
+    <Compile Include="FileACLDemo.cs" />
     <Compile Include="FileInfoDemo.cs" />
     <Compile Include="FileStreamDemo.cs" />
     <Compile Include="PathDemo.cs" />

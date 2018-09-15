@@ -56,7 +56,7 @@ namespace csharpiodemo
             file.Read(temp, 0, temp.Length);
             Console.WriteLine("read data:"+Encoding.UTF8.GetString(temp));
             file.Dispose();
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }
