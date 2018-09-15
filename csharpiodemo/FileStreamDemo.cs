@@ -41,7 +41,22 @@ namespace csharpiodemo
 
         public static void StreamWrite()
         {
+            string path = @"F:\cs\3.txt";
+            FileStream file = new FileStream(path,FileMode.Create,FileAccess.Write);
+            string str = "test txt!";
+            byte[] bytes = Encoding.UTF8.GetBytes(str);
+            file.Write(bytes,0,bytes.Length);
+            file.Dispose();
+            Console.WriteLine("write success");
+            //Console.ReadLine();
 
+            file = new FileStream(path,FileMode.Open,FileAccess.Read);
+            file.Position = 0;
+            byte[] temp = new byte[bytes.Length];
+            file.Read(temp, 0, temp.Length);
+            Console.WriteLine("read data:"+Encoding.UTF8.GetString(temp));
+            file.Dispose();
+            Console.ReadLine();
         }
     }
 }
