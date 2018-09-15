@@ -14,6 +14,7 @@ namespace csharpiodemo
             string msg = "okffffffffffffffff";
             string path = @"f:\cs\10.txt";
             byte[] myBytes = Encoding.UTF8.GetBytes(msg);
+
             using (FileStream fsWrite = new FileStream(path, FileMode.OpenOrCreate))
             {
                 fsWrite.Write(myBytes,0,myBytes.Length);
@@ -28,5 +29,7 @@ namespace csharpiodemo
                 Console.WriteLine(myStr);
             }
         }
+
+
     }
 }

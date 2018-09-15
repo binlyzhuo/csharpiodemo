@@ -24,6 +24,7 @@ namespace csharpiodemo
             //FileSplitDemo.Split();
             FileStreamDemo.CopyTxtContent();
             FileStreamDemo2.Demo1();
+            StreamOffsetDemo.Demo();
             Console.WriteLine("complete!");
             Console.ReadLine();
         }
