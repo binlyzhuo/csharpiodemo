@@ -46,6 +46,7 @@
     <Compile Include="DriverInfoDemo.cs" />
     <Compile Include="FileACLDemo.cs" />
     <Compile Include="FileInfoDemo.cs" />
+    <Compile Include="FileSplitDemo.cs" />
     <Compile Include="FileStreamDemo.cs" />
     <Compile Include="PathDemo.cs" />
     <Compile Include="Program.cs" />
