@@ -15,11 +15,11 @@ namespace csharpiodemo
             Console.WriteLine("create date:"+file.CreationTime);
             Console.WriteLine(file.DirectoryName);
             StreamWriter sw = file.AppendText();
-            sw.Write("ww");
-            sw.WriteLine("xxx");
+            sw.WriteLine("ww"+DateTime.Now.ToString("F"));
+            //sw.WriteLine("xxx");
 
             //sw.Write("ww");
-            sw.WriteLine("xxx");
+            //sw.WriteLine("xxx");
             sw.Close();
             sw.Dispose();
         }

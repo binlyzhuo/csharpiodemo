@@ -21,7 +21,7 @@ namespace csharpiodemo
             FileStreamDemo.StreamWrite();
             StreamWriteDemo.Test();
             FileACLDemo.Demo();
-            FileSplitDemo.Split();
+            //FileSplitDemo.Split();
             Console.WriteLine("complete!");
             Console.ReadLine();
         }
