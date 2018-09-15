@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace csharpiodemo
 {
+    //https://www.cnblogs.com/wywnet/p/5249523.html
     public class FileStreamDemo
     {
         public static void Test()
@@ -57,6 +58,25 @@ namespace csharpiodemo
             Console.WriteLine("read data:"+Encoding.UTF8.GetString(temp));
             file.Dispose();
             //Console.ReadLine();
+        }
+
+        public static void CopyTxtContent()
+        {
+            string path1 = @"f:\cs\IOss.cs";
+            string path2 = @"f:\cs\oop.cs";
+            using (FileStream fsRead = new FileStream(path1, FileMode.Open))
+            {
+                using (FileStream fsWrite = new FileStream(path2,FileMode.Append))
+                {
+                    byte[] arr = new byte[1024];
+                    int count = 0;
+                    while (fsRead.Position<fsRead.Length)
+                    {
+                        count = fsRead.Read(arr, 0, arr.Length);
+                        fsWrite.Write(arr,0,count);
+                    }
+                }
+            }
         }
     }
 }

@@ -20,8 +20,10 @@ namespace csharpiodemo
             FileStreamDemo.WriteTxt();
             FileStreamDemo.StreamWrite();
             StreamWriteDemo.Test();
-            FileACLDemo.Demo();
+            //FileACLDemo.Demo();
             //FileSplitDemo.Split();
+            FileStreamDemo.CopyTxtContent();
+            FileStreamDemo2.Demo1();
             Console.WriteLine("complete!");
             Console.ReadLine();
         }

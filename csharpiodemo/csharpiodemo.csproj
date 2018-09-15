@@ -48,6 +48,7 @@
     <Compile Include="FileInfoDemo.cs" />
     <Compile Include="FileSplitDemo.cs" />
     <Compile Include="FileStreamDemo.cs" />
+    <Compile Include="FileStreamDemo2.cs" />
     <Compile Include="PathDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

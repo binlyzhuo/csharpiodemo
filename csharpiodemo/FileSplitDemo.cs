@@ -20,7 +20,7 @@ namespace csharpiodemo
             FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read);
             byte[] bytes = new byte[1024*1024];
             StreamReader reader = new StreamReader(file);
-            int count = 1000;
+            //int count = 1000;
             FileStream newFile = new FileStream(@"f:\cs\6.mkv", FileMode.OpenOrCreate, FileAccess.Write);
             //StreamWriter writer = new StreamWriter(newFile);
 
